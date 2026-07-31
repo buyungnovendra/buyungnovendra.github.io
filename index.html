@@ -11,6 +11,46 @@ body {
     margin-top: 80px;
     background: #f4f4f4;
 }
+    nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1a73e8;
+    padding: 15px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+    nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0d47a1;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
     .hero {
     background: linear-gradient(135deg, #1a73e8, #0d47a1);
     color: white;
@@ -175,7 +215,14 @@ li::before {
 </head>
 
 <body>
-    <div class="hero">
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero" id="home">
 <img src="buyung.jpg" class="profile">
 <h1>Buyung Novendra</h1>
 
@@ -185,8 +232,7 @@ li::before {
 Professional Portfolio Website
 </p>
         </div>
-    <div class="section">
-
+    <div class="section" id="about">
  <h3>👤 About Me</h3>
 
 <p>
@@ -195,7 +241,7 @@ heavy equipment, lubricant sales, and business development.
 </p>
 
     </div>
-<div class="section">
+<div class="section" id="experience">
     <h3>💼 Professional Experience</h3>
 
     <div class="experience-card">
@@ -219,7 +265,7 @@ heavy equipment, lubricant sales, and business development.
         </p>
     </div>
 </div>
-    <div class="section">
+    <div class="section" id="skills">
 
 <h3>🛠 Skills</h3>
 
@@ -234,7 +280,7 @@ heavy equipment, lubricant sales, and business development.
 </ul>
     </div>
 
-<div class="section">
+<div class="section" id="contact">
 
 <h3>📞 Contact</h3>
 
